@@ -34,9 +34,9 @@ var neonControls = {
 };
 
 // Initialize the GUI for controlling various parameters
+var gui = new dat.GUI();
+var dController, thetaController, phiController;
 (async function initGUI() {
-  var gui = new dat.GUI();
-
   var dr = (5.0 * Math.PI) / 180.0;
 
   gui
@@ -46,6 +46,7 @@ var neonControls = {
     .step(1)
     .onChange(function () {
       render();
+      this.updateDisplay();
     });
   gui
     .add(controls, "far")
@@ -55,7 +56,7 @@ var neonControls = {
     .onChange(function () {
       render();
     });
-  gui
+  dController = gui
     .add(controls, "D")
     .min(0)
     .max(40)
@@ -63,7 +64,7 @@ var neonControls = {
     .onChange(function () {
       render();
     });
-  gui
+  thetaController = gui
     .add(controls, "theta")
     .min(0)
     .max(2 * Math.PI)
@@ -71,7 +72,7 @@ var neonControls = {
     .onChange(function () {
       render();
     });
-  gui
+  phiController = gui
     .add(controls, "phi")
     .min(0.1)
     .max(Math.PI / 2 - 0.1)

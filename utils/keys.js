@@ -7,28 +7,28 @@ function onKeyDown(event) {
 
   switch (event.key) {
     case "ArrowUp":
-      controls.phi = Math.max(controls.phi - dr, 0.1);
+      phiController.setValue(Math.max(controls.phi - dr, 0.1));
       break;
     case "ArrowDown":
-      controls.phi = Math.min(controls.phi + dr, Math.PI / 2 - 0.1);
+      phiController.setValue(Math.min(controls.phi + dr, Math.PI / 2 - 0.1));
       break;
     case "ArrowRight":
-      controls.theta += dr;
+      thetaController.setValue(controls.theta + dr);
       break;
     case "ArrowLeft":
-      controls.theta -= dr;
+      thetaController.setValue(controls.theta - dr);
       break;
     case "w":
-      controls.D = Math.max(1.5, Math.min(controls.D - 0.3, 40.0));
+      dController.setValue(Math.max(1.5, Math.min(controls.D - 0.3, 40.0)));
       break;
     case "s":
       controls.D = Math.max(1.5, Math.min(controls.D + 0.3, 40.0));
       break;
     case "a":
-      controls.theta += dr;
+      thetaController.setValue(controls.theta + dr);
       break;
     case "d":
-      controls.theta -= dr;
+      thetaController.setValue(controls.theta - dr);
       break;
     default:
       break;
@@ -44,7 +44,7 @@ function onKeyDown(event) {
 function wheel(event) {
   const zoomSpeed = 0.1;
   const deltaZoom = -Math.sign(event.deltaY) * zoomSpeed;
-  controls.D = Math.max(1.5, Math.min(controls.D + deltaZoom, 40.0));
+  dController.setValue(Math.max(1.5, Math.min(controls.D + deltaZoom, 40.0)));
   render();
 }
 
@@ -64,9 +64,9 @@ function mouseMove(event) {
   dX *= 0.5;
   dY *= 0.5;
 
-  controls.theta -= dX;
+  thetaController.setValue(controls.theta - dX);
   if (controls.phi + dY >= 0.1 && controls.phi + dY <= Math.PI / 2 - 0.1) {
-    controls.phi += dY;
+    phiController.setValue(controls.phi + dY);
   }
 
   event.preventDefault();
@@ -94,9 +94,9 @@ function touchMove(event) {
     dX *= 0.5;
     dY *= 0.5;
 
-    controls.theta += dX;
+    thetaController.setValue(controls.theta + dX);
     if (controls.phi + dY >= 0 && controls.phi + dY <= Math.PI) {
-      controls.phi += dY;
+      phiController.setValue(controls.phi + dY);
     }
 
     lastTouchX = touch.screenX;
@@ -108,7 +108,7 @@ function touchMove(event) {
     const delta = currentDistance - initialDistance;
     const zoomSpeed = 0.1;
     const deltaZoom = -Math.sign(delta) * zoomSpeed;
-    controls.D = Math.max(1.5, Math.min(controls.D + deltaZoom, 40.0));
+    dController.setValue(Math.max(1.5, Math.min(controls.D + deltaZoom, 40.0)));
     initialDistance = currentDistance;
     render();
   }
@@ -135,9 +135,9 @@ canvas.addEventListener("touchstart", (event) => {
   } else if (event.touches.length === 2) {
     isPinching = true;
     initialDistance = getDistance(event.touches[0], event.touches[1]);
-    console.log("Pinch start, initial distance:", initialDistance);
   }
 });
+
 canvas.addEventListener("touchmove", touchMove);
 canvas.addEventListener("touchend", (event) => {
   moveCamera = false;
