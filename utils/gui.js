@@ -238,7 +238,6 @@ var dController, thetaController, phiController;
 
   lightFolder.closed = true;
   advancedRenderingFolder.closed = true;
-  gui.closed = true;
 })();
 
 function normalizeRGBVector(rgb) {

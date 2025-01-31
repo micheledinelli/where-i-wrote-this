@@ -9,7 +9,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd COPPER_baseColor.jpeg
+map_Kd base-color.webp
 
 newmtl EnvironmentAmbientLight
 Ns 388.799957
@@ -29,7 +29,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd STEEL_MATT_GREY_baseColor.jpeg
+map_Kd steel.webp
 
 newmtl RUBBER
 Ns 61.320499
@@ -49,7 +49,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd STEEL_MATT_GREY_baseColor.jpeg
+map_Kd steel.webp
 
 newmtl STEEL_MATT_GREY
 Ns 844.591858
@@ -59,7 +59,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd STEEL_MATT_GREY_baseColor.jpeg
+map_Kd steel.webp
 
 newmtl STEEL_WHITE
 Ns 261.539459
@@ -69,4 +69,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd STEEL_MATT_GREY_baseColor.jpeg
+map_Kd steel.webp

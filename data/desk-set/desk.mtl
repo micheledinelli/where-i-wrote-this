@@ -8,8 +8,8 @@ Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 2
-map_Kd Apple_logo_grey.svg_baseColor.png
-map_d Apple_logo_grey.svg_baseColor.png
+map_Kd apple-logo-base.webp
+map_d apple-logo-base.webp
 
 newmtl Cork_Coaster
 Ns 250.000000
@@ -19,8 +19,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd Cork_Coaster_baseColor.png
-map_Bump Cork_Coaster_normal.png
+map_Kd cork-base.webp
+map_Bump cork-normal.webp
 
 newmtl Material.001
 Ns 76.279953
@@ -40,7 +40,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd screenshot.png
+map_Kd screenshot.webp
 
 newmtl Material.003
 Ns 1.987960
@@ -61,7 +61,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Bump Material_normal.png
+map_Bump mat-normal.webp
 
 newmtl Material.005
 Ns 39.367722
@@ -231,7 +231,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd Material.005_baseColor.png
+map_Kd mat-005-base.webp
 
 newmtl caps
 Ns 250.000000
@@ -251,7 +251,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd ceramic_baseColor.png
+map_Kd ceramic-base.webp
 
 newmtl comp_desk
 Ns 250.000000
@@ -261,8 +261,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_baseColor.png
-map_Bump comp_desk_normal.png
+map_Kd comp-desk-base.webp
+map_Bump comp_desk_normal.webp
 
 newmtl comp_desk_1remote
 Ns 250.000000
@@ -272,8 +272,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_1remote_baseColor.png
-map_Bump comp_desk_1remote_normal.png
+map_Kd comp-base.webp
+map_Bump comp-normal.webp
 
 newmtl comp_desk_2remote
 Ns 250.000000
@@ -283,8 +283,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_2remote_baseColor.png
-map_Bump comp_desk_2remote_normal.png
+map_Kd comp_desk_2remote_baseColor.webp
+map_Bump comp_desk_2remote_normal.webp
 
 newmtl comp_desk_a
 Ns 250.000000
@@ -294,8 +294,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_a_baseColor.png
-map_Bump comp_desk_a_normal.png
+map_Kd comp_desk_a_baseColor.webp
+map_Bump comp_desk_a_normal.webp
 
 newmtl comp_desk_b
 Ns 250.000000
@@ -305,8 +305,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_b_baseColor.png
-map_Bump comp_desk_b_normal.png
+map_Kd comp_desk_b_baseColor.webp
+map_Bump comp_desk_b_normal.webp
 
 newmtl comp_desk_button
 Ns 250.000000
@@ -316,8 +316,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_button_baseColor.png
-map_Bump comp_desk_button_normal.png
+map_Kd comp_desk_button_baseColor.webp
+map_Bump comp_desk_button_normal.webp
 
 newmtl comp_desk_c
 Ns 250.000000
@@ -327,8 +327,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_c_baseColor.png
-map_Bump comp_desk_c_normal.png
+map_Kd comp_desk_c_baseColor.webp
+map_Bump comp_desk_c_normal.webp
 
 newmtl comp_desk_remote
 Ns 250.000000
@@ -338,8 +338,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_remote_baseColor.png
-map_Bump comp_desk_remote_normal.png
+map_Kd comp_desk_remote_baseColor.webp
+map_Bump comp_desk_remote_normal.webp
 
 newmtl comp_desk_top
 Ns 250.000000
@@ -349,8 +349,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd comp_desk_top_baseColor.png
-map_Bump comp_desk_top_normal.png
+map_Kd comp_desk_top_baseColor.webp
+map_Bump comp_desk_top_normal.webp
 
 newmtl keys
 Ns 321.193054
@@ -360,7 +360,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd keys_baseColor.png
+map_Kd keys_baseColor.webp
 
 newmtl lambert1
 Ns 250.000000
@@ -369,9 +369,9 @@ Ks 0.500000 0.500000 0.500000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd lambert1_baseColor.jpeg
-map_Ke lambert1_emissive.jpeg
-map_Bump lambert1_normal.png
+map_Kd lambert1_baseColor.webp
+map_Ke lambert1_emissive.webp
+map_Bump lambert1_normal.webp
 
 newmtl screen_black
 Ns 912.024963
@@ -381,7 +381,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd screenshot-blender.png
+map_Kd screenshot-blender.webp
 
 newmtl screen_black.001
 Ns 942.351685

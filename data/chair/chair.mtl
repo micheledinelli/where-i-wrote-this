@@ -9,8 +9,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd phongE5_baseColor.png
-map_Bump phongE5_normal.png
+map_Kd base.webp
+map_Bump normal.webp
 
 newmtl phongE5_0
 Ns 250.000000
@@ -19,6 +19,6 @@ Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 2
-map_Kd phongE5_0_baseColor.png
-map_d phongE5_0_baseColor.png
-map_Bump phongE5_normal.png
+map_Kd base-0.webp
+map_d base-0.webp
+map_Bump normal.webp
