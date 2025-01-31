@@ -236,6 +236,11 @@ var objects;
     },
   ];
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (isMobile) {
+    objects = objects.filter((obj) => obj.href !== "data/desk-set/desk.obj");
+  }
+
   // Load objects
   for (let objToLoad of objects) {
     let obj = await load(gl, objToLoad.href);
